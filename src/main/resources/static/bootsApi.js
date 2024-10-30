@@ -180,7 +180,7 @@ const handle500Error = (json) => {
   /**
    * renders boot types into dropdown options
    * @param {Element[]} bootTypesSelects DOM elements to render options into
-   * @param {String[]} bootTypes array of different boot types
+   * @param {String[]} bootTypes array of different boots types
    */
   const renderBootTypesOptionsCallback = (bootTypesSelects) => (bootTypes) => {
     for (const bootTypesSelect of bootTypesSelects) {
