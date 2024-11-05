@@ -15,7 +15,7 @@
   <body>
     <div id="bootsApp" class="boots-app-container">
       <div class="boots-banner">
-        <h1>👢 Boots 🥾</h1>
+        <h1 id = "bootTitle">👢 Boots 🥾</h1>
       </div>
       <hr />
       <div id="bootsList" class="boots-list">
@@ -88,7 +88,7 @@
             <input type="number" id="quantity" name="quantity" min="0" step="1">
           </div>
 
-          <button type="button" id="searchBootSubmit" onclick="searchBoots(renderBootsListCallback(document.getElementById('bootsSearchResultsTableBody')));">Search</button>
+          <button type="button" id="searchBootSubmit" onclick="searchBoots(renderBootsListCallback(document.getElementById('searchBoot')));">Search</button>
         </form>
         <hr />
         <div id="searchBootResults">

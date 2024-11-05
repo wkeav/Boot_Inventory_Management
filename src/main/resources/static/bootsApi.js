@@ -66,9 +66,9 @@ const handle500Error = (json) => {
       type,
       size,
       quantity
-    }
+    };
     const queryString = Object.keys(bootQuery)
-      .filter(k => bootQuery[k])
+      .filter(k => bootQuery[k] !== null && bootQuery[k] !== "")
       .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(bootQuery[key])}`)
       .join('&');
   
@@ -80,7 +80,7 @@ const handle500Error = (json) => {
         cb(json)
       })
       .catch(renderError);
-  }
+    };
   
   const deleteBootById = (bootId, cb) => {
     fetch(`/api/v1/boots/${parseInt(bootId)}`, {
@@ -102,12 +102,15 @@ const handle500Error = (json) => {
     const type = addBootForm["type"].value;
     const size = parseFloat(addBootForm["size"].value);
     const quantity = parseInt(addBootForm["quantity"].value);
+    
+    //omit the ID 
     const boot = {
       material,
       type,
       size,
       quantity
-    }
+    };
+
     fetch("/api/v1/boots/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -120,7 +123,7 @@ const handle500Error = (json) => {
         fetchAllBoots(cb);
       })
       .catch(renderError);
-  }
+  };
   
   
   const changeBootQuantity = (bootId, action, cb) => {

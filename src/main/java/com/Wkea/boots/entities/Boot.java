@@ -31,7 +31,7 @@ public class Boot {
     @Column(name="MATERIAL")
     private String material; 
 
-   //getter & setter 
+
    //getter & setter 
 public Integer getId(){
     return this.id; 
