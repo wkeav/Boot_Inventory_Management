@@ -1,5 +1,4 @@
-## Boot Inventory Management System 
-A full-stack management inventory system for a boot store. 
+#### Boot Inventory Management System 
 
 ## Description 
 The Boot Inventory Management System is a full-stack web application designed to automate the management of boot inventory in the boot store. This application allows users to easily add, update, remove, or search items in the boots store inventory. 
