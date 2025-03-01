@@ -21,6 +21,3 @@ The Boot Inventory Management System is a full-stack web application designed to
 - Frontend: HTML/CSS, Javascript
 - Tools: Maven, Visual Studio Code 
 
-## Contact 
-Author: Astra Nguyen
-Linkedin: https://www.linkedin.com/in/astra-nguyen-40b024259/
